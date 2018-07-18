@@ -30,10 +30,12 @@ Template.ticket.events({
     Meteor.call('completeTicket', this._id);
   },
   'click .reopen.button': function(){
-    Meteor.call('reopenTicket', this._id);
+    if(confirm('您确定要取消认领该请求吗？')){
+      Meteor.call('reopenTicket', this._id);
+    }
   },
   'click .cancel.button': function(){
-    if(confirm('Are you sure you would like to cancel this ticket?')){
+    if(confirm('您确定要取消该请求吗？')){
       Meteor.call('cancelTicket', this._id);
     }
   }

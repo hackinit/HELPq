@@ -18,14 +18,14 @@ Template.ticketPanel.helpers({
   greeting: function(){
     // Return the first name
     if (Meteor.user().profile.name){
-      return "Hey, " + Meteor.user().profile.name.split(" ")[0] + "!";
+      return "你好，" + Meteor.user().profile.name.split(" ")[0] + "！";
     }
 
     if (Meteor.user().services.github){
-      return "Hey, " + Meteor.user().services.github.username + "!";
+      return "你好， " + Meteor.user().services.github.username + "！";
     }
 
-    return "Hey there!";
+    return "你好！";
 
   },
   queueEnabled: function(){
@@ -78,7 +78,7 @@ Template.ticketPanel.events({
     return createTicket();
   },
   'click .cancel': function(){
-    if(confirm('Are you sure you would like to cancel your ticket?')){
+    if(confirm('您确定要撤回请求吗？')){
       return Meteor.call("cancelTicket", this._id);
     }
   },

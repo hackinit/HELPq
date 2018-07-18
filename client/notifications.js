@@ -14,7 +14,7 @@ Tracker.autorun(function(){
       status: 'CLAIMED'
     });
     if (claimedTicket){
-      var message = claimedTicket.claimName + " claimed your ticket!";
+      var message = claimedTicket.claimName + " 认领了您的请求！";
 
       // Desktop Notification
       notifyDesktop(message);

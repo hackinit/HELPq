@@ -8,9 +8,6 @@ Template.mentorStatus.helpers({
   mentorsAvailable: function(){
     return mentorsOnline().length;
   },
-  mentorsText: function(){
-    return mentorsOnline().length == 1 ? "mentor" : "mentors";
-  },
   estimatedWait: function(){
     return formatTime(estimatedWait());
   }
@@ -19,17 +16,17 @@ Template.mentorStatus.helpers({
 function formatTime(ms){
   var s = (ms / 1000).toFixed(0);
   if (s < 60){
-    return s + " seconds";
+    return s + " 秒";
   }
   if (s >= 60 && s < 3600){
     var minutes = Math.floor(s / 60);
-    return minutes + (minutes == 1 ? " minute" : " minutes");
+    return minutes + " 分钟";
   }
   if (s >= 3600){
-    return "1 hour or more";
+    return "1 小时或更长";
   }
 
-  return "uncertain";
+  return "无法确定";
 }
 
 function completedTickets(){

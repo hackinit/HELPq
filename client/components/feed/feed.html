@@ -1,6 +1,6 @@
 <template name="feed">
   <div class="feed-title">
-    Currently in the queue:
+    当前等待帮助的队伍：
   </div>
   <div class="ui feed">
     {{#if tickets}}
@@ -8,7 +8,7 @@
         {{> feedTicket }}
       {{/each}}
     {{else}}
-      Nobody in the queue!
+      无！
     {{/if}}
   </div>
 </template>

@@ -3,11 +3,13 @@
     {{#if mentorsAvailable}}
       <div class="ui green empty circular label"
            style="margin-right: 4px"></div>
-      <strong>{{mentorsAvailable}}</strong> {{mentorsText}} online.
-      Estimated wait: <strong>{{estimatedWait}}</strong>
+      当前有 <strong>{{mentorsAvailable}}</strong> 位导师在线。 <br />
+      <span style="padding-left: 18px;">
+        预计等待时间： <strong>{{estimatedWait}}</strong>
+      </span>
     {{else}}
       <div class="ui red empty circular label"
-           style="margin-right: 4px"></div> No mentors online right now.
+           style="margin-right: 4px"></div> 当前没有导师在线
     {{/if}}
   </div>
 </template>

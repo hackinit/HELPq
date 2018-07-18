@@ -16,7 +16,7 @@
 
                 {{#if expirationFromNow}}
                   <p>
-                    Your ticket will expire {{expirationFromNow}}.
+                    您的请求将在 {{expirationFromNow}} 后过期。
                   </p>
                 {{/if}}
               </div>
@@ -27,9 +27,9 @@
                 {{constant 'TICKET_PANEL_CLAIMED'}}
               </div>
               <div class="content">
-                {{claimName}} has claimed your ticket.
+                {{claimName}} 已经认领了您的请求
                 <br>
-                They're on the way!
+                他/她会尽快联络您！
               </div>
             {{/if}}
 
@@ -100,10 +100,10 @@
 <template name="ticketPanelRating">
 
   <div class="title">
-    How did it go?
+    您对本次帮助满意吗？
   </div>
   <p>
-    Rate your experience with {{claimName}}.
+    请对 {{claimName}} 的帮助进行评分
   </p>
   <div id="rating">
     <div class="ui massive yellow star rating"
@@ -111,7 +111,7 @@
     <br>
     <div class="ui form">
       <div class="field">
-        <label> Do you have any comments? (Optional) </label>
+        <label> （可选）您有任何想要留下的评价吗？ </label>
         <textarea
             class="comments"
             rows="2"
@@ -120,7 +120,7 @@
       <button
           id="feedback"
           class="disabled fluid primary push button">
-        Submit Feedback
+        提交反馈
       </button>
     </div>
   </div>
