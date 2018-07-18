@@ -66,6 +66,7 @@ function ticketPercent(n){
 
 function wordFreqs(text){
   var cleaned = text.replace(/[\.,-\/#!$%\^&\*;:{}=\-_`~()]/g,"");
+  cleaned = cleaned.replace(/，/g," ")
   var words = cleaned.split(" ");
   var freq = {};
   var ignore = ['',' ', 'and','the','to','a','of','for','as','i','with','it','is','on','that','this','can','in','be','has','if'];

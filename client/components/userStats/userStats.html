@@ -2,25 +2,25 @@
   <div class="userStats">
     <div class="ui top attached tertiary header segment">
       <strong>
-        User Summary
+        用户概况
       </strong>
     </div>
     <div class="ui bottom attached segment">
 
       <div>
-        Total Users:
+        用户数量：
         <strong>
         {{ users.length }}
         </strong>
       </div>
       <div>
-        Total Mentors:
+        导师数量：
         <strong>
           {{ mentors.length }}
         </strong>
       </div>
       <div>
-        Total Tickets:
+        请求数量：
         <strong>
           {{ ticketCount }}
         </strong>
@@ -29,16 +29,16 @@
       <br>
 
       <p>
-        Of <strong>{{users.length}}</strong> users,
-        <strong>{{activeUsers}}</strong> have submitted tickets.
+        在 <strong>{{users.length}}</strong> 位用户中，
+        <strong>{{activeUsers}}</strong> 位曾提交过帮助请求
       </p>
 
       <p>
-        Of <strong>{{mentors.length}}</strong> mentors,
-        <strong>{{activeMentors}}</strong> have completed tickets.
+        在 <strong>{{mentors.length}}</strong> 位导师中，
+        <strong>{{activeMentors}}</strong> 位曾完成过帮助请求
       </p>
 
-      <h4 class="ui dividing header">Topic Word Frequencies</h4>
+      <h4 class="ui dividing header">主题高频词</h4>
 
       <div class="ui labels">
         {{#each wordFreqs}}

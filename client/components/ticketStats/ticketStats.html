@@ -2,12 +2,12 @@
   <div class="ui blue segment">
     {{#with claimTimes}}
       <div>
-        Average response time:
+        平均响应（认领）时间：
         <h2>
           {{meanTime}}
         </h2>
         <div>
-          Median: <strong>{{medianTime}}</strong>, Std Dev:<strong>{{stdDevTime}}</strong>
+          中位数：<strong>{{medianTime}}</strong>，标准差：<strong>{{stdDevTime}}</strong>
         </div>
       </div>
     {{/with}}
@@ -16,12 +16,12 @@
 
     {{#with completeTimes}}
       <div>
-          Average Completion time:
+          平均完成时间：
         <h2>
           {{meanTime}}
         </h2>
         <div>
-          Median: <strong>{{medianTime}}</strong>, Std Dev: <strong>{{stdDevTime}}</strong>
+          中位数：<strong>{{medianTime}}</strong>，标准差： <strong>{{stdDevTime}}</strong>
         </div>
       </div>
     {{/with}}
@@ -30,7 +30,7 @@
 
     {{#with ratings}}
       <div>
-        Average Rating:
+        平均选手评分：
         <h2>
           {{mean}}
           <i class="yellow star icon"></i>

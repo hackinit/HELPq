@@ -58,7 +58,7 @@ function formatCsv(csv, t){
   var rows = csv.split('\n');
 
   if (csv.length == 0){
-    throw "There's nothing here.";
+    throw "列表为空";
   }
 
   var users = {};
@@ -67,11 +67,11 @@ function formatCsv(csv, t){
     var columns = row.split(',');
 
     if (columns.length < 3){
-      throw "Row " + i + " has " + columns.length + " values, expected 3";
+      throw "第 " + i + " 行有 " + columns.length + " 个值，少于 3 项";
     }
 
     if (columns.length > 3){
-      throw "Row " + i + " has " + columns.length + " values, expected 3";
+      throw "第 " + i + " 行有 " + columns.length + " 个值，多于 3 项";
     }
 
     var username = columns[0].trim(),
@@ -80,12 +80,12 @@ function formatCsv(csv, t){
 
     // Ensure the username is unique
     if (users[username]) {
-      throw "Duplicate username: " + username;
+      throw "用户名重复： " + username;
     }
 
     // Ensure the password is at least 6 characters
     if (password.length < 6){
-      throw "Row " + i + " password too short, must be 6 characters or more";
+      throw "第 " + i + " 行的密码强度太低，需至少6个字符";
     }
 
     // Keep track of this username

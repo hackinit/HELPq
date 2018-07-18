@@ -21,7 +21,7 @@ Router.route('/mentor', function(){
   if (authorized.mentor()){
     this.render('mentor');
   } else {
-    this.render('error', { data: { msg: "You're not a mentor!" }});
+    this.render('error', { data: { msg: "您没有此页面的访问权限" }});
   }
 });
 
@@ -30,6 +30,6 @@ Router.route('/admin', function(){
   if (authorized.admin()){
     this.render('admin');
   } else {
-    this.render('error', { data: { msg: "You're not an admin!" }});
+    this.render('error', { data: { msg: "您没有此页面的访问权限" }});
   }
 });

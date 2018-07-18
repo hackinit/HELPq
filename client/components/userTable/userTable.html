@@ -10,27 +10,27 @@
       <div class="three wide field">
         <div class="ui right aligned pointing top right dropdown labeled icon fluid button">
           <i class="filter icon"></i>
-          <span class="text">Filter Users</span>
+          <span class="text">筛选用户</span>
           <div class="menu">
             <div class="header">
               <i class="tags icon"></i>
-              Filter By Permissions
+              按照权限筛选
             </div>
             <div class="filter item" data-filter="all">
               <div class="ui empty circular label"></div>
-              All
+              全部用户
             </div>
             <div class="filter item" data-filter="mentor">
               <div class="ui blue empty circular label"></div>
-              Mentor
+              导师
             </div>
             <div class="filter item" data-filter="admin">
               <div class="ui yellow empty circular label"></div>
-              Admin
+              管理员
             </div>
             <div class="filter item" data-filter="student">
               <div class="ui black empty circular label"></div>
-              Student
+              参赛者
             </div>
           </div>
         </div>
@@ -40,11 +40,11 @@
   <table class="ui striped table userTable">
     <thead>
     <tr>
-      <th>Username</th>
-      <th>Name</th>
+      <th>用户名</th>
+      <th>姓名</th>
       <th>Email</th>
-      <th>Phone</th>
-      <th>Skills</th>
+      <th>手机号</th>
+      <th>技能</th>
       <th></th>
     </tr>
     </thead>
@@ -86,26 +86,26 @@
         <td class="right aligned collapsing">
           {{#if profile.mentor}}
             <span class="ui tiny blue button toggle-mentor">
-            Mentor
+            导师
           </span>
           {{else}}
             <span class="ui tiny basic button toggle-mentor">
-            Mentor
+            导师
           </span>
           {{/if}}
 
           {{#if profile.admin}}
             <span class="ui tiny blue button toggle-admin">
-            Admin
+            管理员
           </span>
           {{else}}
             <span class="ui tiny basic button toggle-admin">
-            Admin
+            管理员
           </span>
           {{/if}}
 
           <span class="ui tiny button edit-user">
-            Edit
+            编辑
           </span>
         </td>
       </tr>
@@ -116,7 +116,7 @@
   <div class="ui edit-user small modal">
     <i class="close icon"></i>
     <div class="header">
-      Edit User
+      编辑用户
     </div>
     <div class="content">
     </div>

@@ -2,23 +2,23 @@
   <div class="user-edit">
     <div class="ui form">
       <div class="field">
-        <label>Name</label>
-        <input type="text" class="profile" name='name' value="{{profile.name}}" placeholder="Your Name" required>
+        <label>姓名</label>
+        <input type="text" class="profile" name='name' value="{{profile.name}}" placeholder="您的名字" required>
       </div>
       <div class="field">
         <label>Email</label>
-        <input type="email" class="profile" name='email' value="{{profile.email}}" placeholder="Email Address" required>
+        <input type="email" class="profile" name='email' value="{{profile.email}}" placeholder="您的Email地址" required>
       </div>
       <div class="field">
-        <label>Phone</label>
-        <input type="tel" class="profile" name='phone' value="{{profile.phone}}" placeholder="Phone Number" required>
+        <label>手机</label>
+        <input type="tel" class="profile" name='phone' value="{{profile.phone}}" placeholder="您的手机号" required>
       </div>
       <div class="field">
-        <label>Company</label>
-        <input type="text" class="profile" name='company' value="{{profile.company}}" placeholder="Company/Position">
+        <label>学校</label>
+        <input type="text" class="profile" name='company' value="{{profile.company}}" placeholder="您所属的学校/组织">
       </div>
       <div class="field">
-        <label>Skills</label>
+        <label>技能</label>
         {{#each skills}}
           <div class="ui label">
             {{skill}}
@@ -27,11 +27,11 @@
         {{/each}}
         <div class="ui fluid action input">
           <input type="text" name="skills" placeholder="node.js, ruby, python, machine learning, etc...">
-          <div class="ui blue button add-skill">Add Skill</div>
+          <div class="ui blue button add-skill">添加技能</div>
         </div>
       </div>
       <div class="field">
-        <div class="ui fluid green save button">Save Profile</div>
+        <div class="ui fluid green save button">保存简历</div>
       </div>
 
       {{#if success }}

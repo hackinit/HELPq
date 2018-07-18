@@ -1,26 +1,26 @@
 <template name="settings">
   <div class="ui top attached tertiary header segment">
     <strong>
-      Settings
+      设置
     </strong>
   </div>
   <div class="ui bottom attached segment">
 
     <h3 class="ui dividing header">
-      Queue
+      提问系统
     </h3>
     <div class="ui form">
 
       <div class="field">
         <div id="queueEnabled" class="ui toggle checkbox">
           <input type="checkbox" name="queueEnabled" checked="{{settings.queueEnabled}}">
-          <label>Open/Close Queue</label>
+          <label>开启/关闭 提问系统</label>
         </div>
       </div>
     </div>
 
     <h3 class="ui dividing header">
-      Ticket Expiration
+      帮助请求的过期时间
     </h3>
     <div class="ui form">
 
@@ -28,25 +28,25 @@
         <div class="field">
           <div class="ui radio checkbox" data-name="expire">
             <input type="radio" value="900000" name="expirationDelay">
-            <label>after <strong>15</strong> minutes</label>
+            <label><strong>15</strong> 分钟后</label>
           </div>
         </div>
         <div class="field">
           <div class="ui radio checkbox" data-name="expire">
             <input type="radio" value="1800000" name="expirationDelay">
-            <label>after <strong>30</strong> minutes</label>
+            <label><strong>30</strong> 分钟后</label>
           </div>
         </div>
         <div class="field">
           <div class="ui radio checkbox" data-name="expire">
             <input type="radio" value="3600000" name="expirationDelay">
-            <label>after <strong>60</strong> minutes</label>
+            <label><strong>60</strong> 分钟后</label>
           </div>
         </div>
         <div class="field">
           <div class="ui radio checkbox" data-name="expire">
             <input type="radio" value="0" name="expirationDelay">
-            <label>Tickets Don't Expire</label>
+            <label>永不过期</label>
           </div>
         </div>
       </div>

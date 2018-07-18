@@ -1,7 +1,7 @@
 <template name="leaderboard">
   <div class="ui yellow segment">
     <h3 class="ui dividing header">
-      Leaderboard
+      导师排行
     </h3>
     <div class="ui large relaxed ordered list">
       {{#each topMentors}}
@@ -18,7 +18,7 @@
       <strong>{{profile.name}}</strong>
       <em>{{profile.company}}</em>
       <p>
-        <strong>{{rating}}</strong> <i class="ui yellow star icon"></i> ({{numTickets}} Tickets)
+        <strong>{{rating}}</strong> <i class="ui yellow star icon"></i> ({{numTickets}} 已完成)
       </p>
     </div>
   </div>
